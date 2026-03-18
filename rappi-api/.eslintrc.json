@@ -1,7 +1,10 @@
 {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "./tsconfig.json",
+        "project": [
+            "./rappi-frontend/tsconfig.app.json",
+            "./rappi-api/tsconfig.json"
+        ],
         "sourceType": "module"
     },
     "env": {

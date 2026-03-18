@@ -19,5 +19,11 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    parserOptions: {
+      project: [
+        "./rappi-frontend/tsconfig.app.json",
+        "./rappi-api/tsconfig.json"
+      ]
+    },
   },
 ])
