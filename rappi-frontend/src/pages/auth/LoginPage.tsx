@@ -27,7 +27,7 @@ export default function LoginPage() {
                 navigate('/browse');
             } else if (role === UserRole.STORE) {
                 try {
-                    const response = await axios.get<Store[]>(`http://localhost:1234/api/stores`, {
+                    const response = await axios.get<Store[]>(`https://lab3-ecosistemas-backend.vercel.app/api/stores`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
 
